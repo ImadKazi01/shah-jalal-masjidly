@@ -98,10 +98,6 @@ onMounted(fetchSlideshow);
   border-radius: $border-radius;
   overflow: hidden;
 
-  .ramadan-news {
-    height: 85%;
-  }
-
   .swiper {
     height: 100%;
   }
@@ -141,6 +137,10 @@ onMounted(fetchSlideshow);
     .news-item {
       padding: $padding-small 0;
     }
+  }
+
+  .ramadan-news {
+    height: 85%;
   }
 }
 
