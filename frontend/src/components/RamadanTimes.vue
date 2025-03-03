@@ -152,8 +152,8 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  font-size: $font-size-xxlarge;
-  font-weight: $font-weight-bold;
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-extra-bold;
 }
 
 .timings p {
@@ -161,3 +161,4 @@ onMounted(() => {
   padding: 0 1rem;
 }
 </style>
+ß
