@@ -7,8 +7,8 @@ import { getWeekRange } from "../utils/dateUtils.js";
 
 const sehriEndTime = ref("");
 const iftarTime = ref("");
-const sehriLabel = ref("Sehri Today"); // Default label for today
-const iftarLabel = ref("Iftar Today"); // Default label for today
+const sehriLabel = ref("Sehri"); // Default label for today
+const iftarLabel = ref("Iftar"); // Default label for today
 const tomorrowSehriEndTime = ref("");
 const tomorrowIftarTime = ref("");
 
@@ -57,10 +57,6 @@ const fetchRamadanTimes = async () => {
       // Convert to 12-hour format for display
       sehriEndTime.value = convertTo12Hour(sehri24);
       iftarTime.value = convertTo12Hour(iftar24);
-
-      // Set the labels for today
-      sehriLabel.value = "Sehri Today";
-      iftarLabel.value = "Iftar Today";
     }
 
     // Fetch tomorrow's prayers
@@ -176,9 +172,6 @@ const updateRamadanTimes = async () => {
 
           tomorrowIftarTime.value = convertTo12Hour(tomorrowIftar24);
           iftarTime.value = convertTo12Hour(tomorrowIftar24);
-
-          sehriLabel.value = "Sehri Tomorrow";
-          iftarLabel.value = "Iftar Tomorrow";
         }
       }
     } catch (error) {
