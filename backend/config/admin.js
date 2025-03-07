@@ -11,8 +11,11 @@ module.exports = ({ env }) => ({
     },
   },
   forgotPassword: {
-    from: 'salaam@masjidly.co.uk',
-    replyTo: 'salaam@masjidly.co.uk',
+    from: "Masjidly <salaam@masjidly.co.uk>",
+    replyTo: "Masjidly <salaam@masjidly.co.uk>",
+    emailTemplate: {
+      subject: "Masjidly - Reset Password",
+    },
   },
   flags: {
     nps: env.bool("FLAG_NPS", true),
