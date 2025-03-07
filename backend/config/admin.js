@@ -11,10 +11,10 @@ module.exports = ({ env }) => ({
     },
   },
   forgotPassword: {
-    from: "Masjidly <salaam@masjidly.co.uk>",
-    replyTo: "Masjidly <salaam@masjidly.co.uk>",
+    from: "Shah Jalal Masjid <salaam@masjidly.co.uk>",
+    replyTo: "Shah Jalal Masjid <salaam@masjidly.co.uk>",
     emailTemplate: {
-      subject: "Masjidly - Reset Password",
+      subject: "Shah Jalal Masjid - Reset Password",
     },
   },
   flags: {
