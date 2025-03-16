@@ -1,21 +1,3 @@
-<template>
-  <section class="salaah-view">
-    <!-- Next Prayer + Timetable (unchanged) -->
-    <NextPrayer
-      :nextName="nextPrayerName"
-      :nextCountdown="nextPrayerCountdown"
-    />
-    <TimeTable
-      :prayers="finalArray"
-      :activeName="currentPrayerName"
-      :tomorrowData="tomorrowData"
-    />
-
-    <div v-if="loading">Loading...</div>
-    <div v-if="error" class="error">{{ error }}</div>
-  </section>
-</template>
-
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 import NextPrayer from "../components/NextPrayer.vue";
@@ -191,6 +173,7 @@ onUnmounted(() => {
 
 <template>
   <section class="salaah-view">
+    <!-- Next Prayer + Timetable (unchanged) -->
     <NextPrayer
       :nextName="nextPrayerName"
       :nextCountdown="nextPrayerCountdown"
@@ -198,11 +181,11 @@ onUnmounted(() => {
     <TimeTable
       :prayers="finalArray"
       :activeName="currentPrayerName"
-      :tomorrowData="store.tomorrowData"
+      :tomorrowData="tomorrowData"
     />
 
-    <div v-if="store.loading">Loading...</div>
-    <div v-if="store.error" class="error">{{ store.error }}</div>
+    <div v-if="loading">Loading...</div>
+    <div v-if="error" class="error">{{ error }}</div>
   </section>
 </template>
 
